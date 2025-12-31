@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Frames of Solapur</h1>
+
+<!-- Filter Buttons (Bonus) -->
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('Temple')">Temple</button>
+  <button onclick="filterImages('Food')">Food</button>
+  <button onclick="filterImages('See_More')">See_More</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+   <img src="temple1.jpeg"title="Shri Siddheshwar Temple, Solapur" class="Temple" onclick="openLightbox(0)">
+   <img src="temple2.jpg"title="Shri Vitthal–Rukmini Temple, Pandharpur"  class="Temple" onclick="openLightbox(1)">
+   <img src="temple3.jpg"title="Shri Swami Samarth Maharaj Temple, Akkalkot" class="Temple" onclick="openLightbox(2)">
+   <img src="temple4.jpg" title="Shri Markandeya Temple, Solapur" class="Temple" onclick="openLightbox(3)">
+   <img src="temple5.avif"title="Shri Khandoba Temple ,Solapur" class="Temple" onclick="openLightbox(4)">
+   <img src="food1.avif" title="Misal Pav" class="Food" onclick="openLightbox(5)">
+   <img src="food2.jpg"  title="Pav Bhaaji" class="Food" onclick="openLightbox(6)">
+   <img src="food3.jpg"  title="Paani Puri" class="Food" onclick="openLightbox(7)">
+   <img src="food4.jpg"  title="Aandr bhaji"class="Food" onclick="openLightbox(8)">
+   <img src="food5.jpg"  title="Vada pav" class="Food" onclick="openLightbox(9)">
+   <img src="food6.jpg"  title="Paneer Masala" class="Food" onclick="openLightbox(10)">
+   <img src="food7.jpg"  title="Dabeli" class="Food" onclick="openLightbox(11)">
+   <img src="food8.jpg" title="Thali" class="Food" onclick="openLightbox(12)">
+   <img src="food9.jpg"  title="Sweets" class="Food" onclick="openLightbox(13)">
+   <img src="food 10.jpg"title="Dhokla" class="Food" onclick="openLightbox(14)">
+   <img src="fort1.jpg"  title="Bhuikot Fort" class="See_More" onclick="openLightbox(15)">
+   <img src="fort2.avif" title="Barshi Fort" class="See_More" onclick="openLightbox(16)">
+   <img src="ujjanidam.jpg" title="Ujani Dam,solapur" class="See_More" onclick="openLightbox(17)">
+   <img src="science_centre.jpg" title="science_centre,solapur" class="See_More" onclick="openLightbox(18)">
+   <img src="hipparga_lake.jpg" title="hipparga lake ,solapur" class="See_More" onclick="openLightbox(19)">
+   <img src="solapurmap.png" title="solapur District map" class="See_More" onclick="openLightbox(20)">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span class="close" onclick="closeLightbox()">×</span>
+  <button class="prev" onclick="changeImage(-1)">❮</button>
+  <img id="lightbox-img">
+  <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
